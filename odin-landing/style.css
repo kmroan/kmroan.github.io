@@ -1,0 +1,160 @@
+body {
+        margin: 0;
+        font: 1em sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.header {
+    background-color: #1f2937;
+    color:#F9faf8;
+    align-items: center;
+    justify-content: center;
+    padding: 1% 10% 1% 10%;
+}
+
+ul.header {
+    margin: 0;
+    display: flex;
+    list-style-type:none;
+    gap: 30px;
+    font: normal bold 18px sans-serif;
+    color:#e5e7eb;
+}
+
+#logo {
+    font: normal bolder 24px sans-serif;
+    margin-right:auto;
+}
+
+.hero {
+    display:flex;
+    background-color: #1f2937;
+    font: normal normal 18px sans-serif;
+    color:#e5e7eb;
+    padding: 1% 10% 1% 10%;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+}
+
+.heroct p, h1 {
+    margin:0;
+    padding:0;  
+}
+.heroct h1 {
+    font: normal bolder 48px sans-serif; 
+    color: #f9faf8;
+}
+
+.heroct button {
+    background-color: #3882f6;
+    border:none;
+    border-radius:10px;
+    color: #FFF;
+    font: normal bold 16px sans-serif;
+    text-align:center;
+    padding: 10px 32px;
+    margin-top: 10px;
+}
+
+.heroimg  img {
+    object-fit:contain;
+    max-width: 80%;
+}
+
+.cards_ct {
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+.cards {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.cards_header {
+    font: normal bolder 36px sans-serif;
+    color:#1f2937;
+    display:flex;
+    padding: 2% 10% 2% 10%;
+    justify-content: center;
+}
+
+.card {
+
+}
+
+.cards img {
+    object-fit:contain;
+    height: 200px;
+    width: 200px;
+    border: 3px solid #3882f6;
+    border-radius: 15px;
+    margin: 5px 20px 5px 20px;
+}
+
+.cards p {
+    text-align:center;
+    width:200px;
+    word-wrap: break-word;
+}
+
+.quotect {
+    background-color: #e5e7eb;
+    justify-content: center;
+    padding: 5% 10% 5% 10%;
+}
+
+.quote {
+    font: normal italic 36px sans-serif;
+}
+
+.quote_attr {
+    font: normal bolder 18px sans-serif;
+    text-align:right;
+}
+
+.quotect p {
+    margin:0;
+    padding:0;
+}
+
+.cta_ct {
+    padding: 5% 10% 5% 10%;
+
+}
+
+.cta_box {
+    background-color:#3882f6;
+    padding: 5% 15%;
+    border-radius: 15px;
+    display:flex;
+    flex-direction: row;
+}
+
+.cta_text {
+    color:#F9faf8;
+    flex-grow: 2;
+}
+
+.cta_btn button {
+    background-color: #3882f6;
+    border: 2px solid white;
+    border-radius:10px;
+    color: #FFF;
+    font: normal bold 18px sans-serif;
+    text-align:center;
+    height: 50px;
+    width: 150px;
+}
+footer {
+    background-color: #1f2937;
+    color:#F9faf8;
+    align-items: center;
+    justify-content: center;
+    padding: 1% 10% 1% 10%;
+}
