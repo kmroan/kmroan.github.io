@@ -64,6 +64,7 @@ ul.header {
 .heroimg  img {
     object-fit:contain;
     max-width: 80%;
+    padding: 0px 8px 0px 8px;
 }
 
 .cards_ct {
