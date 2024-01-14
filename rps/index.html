@@ -4,52 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script>
-        
-        function getComputerChoice() {
-            const choice = ['rock','paper','scissors'];
-            let sel = Math.floor(Math.random() *3);
-            return choice[sel];
-        }
-
-        function playRound(computerSel,playerSel) {
-            playerSel = playerSel.toLowerCase();
-            if (computerSel === playerSel) {
-                return 0;
-            
-            } else if (computerSel === "rock" && playerSel == "scissors" || 
-                      computerSel === "scissors" && playerSel === "paper" ||                   
-                      computerSel === "paper" && playerSel === "rock") {
-                return 1;
-            } else {
-                return 2;
-            }
-        }
-
-        function game() {
-            let wins = 0
-            let playerSel = prompt("Rock, paper, or scissors?")
-            for (let i = 1; i < 6; i++) {
-                console.log(`Round ${i}`)
-              let cpuSel = getComputerChoice()
-              let res = playRound(cpuSel,playerSel)
-              switch (res) {
-                case 0:
-                    console.log(`tie. CPU: ${cpuSel}, player: ${playerSel}`)
-                    break;
-                case 1:
-                    console.log(`CPU Victory.  CPU: ${cpuSel}, player: ${playerSel}`)
-                    break;
-                case 2:
-                    console.log(`User victory. CPU: ${cpuSel}, player: ${playerSel}`)
-                    break;
-              }
-            }
-        }
-
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="rps.js" defer></script>
 </head>
 <body>
-    
+    <div class="container">
+        <header><h1>Rock Paper Scissors</h1></header>
+        <main>
+            <section class="weaponSection">
+                <div class="weaponHeader">
+                    <h1>Select a weapon:</h1>
+                    <h3 id="gmStatus">5 points needed to win!</h3>
+                </div>
+                <div class="weaponBtns">
+                    <button id="btnRock">🪨</button>
+                    <button id="btnPaper">🧻</button>
+                    <button id="btnScis">✂️</button>
+                </div>
+            </section>
+            <section class="scoreSection">
+                <div class="scores">
+                    <div class="scoreCard">
+                        <span id="playerChoice">🦙</span> 
+                        <p>Player: <span class="actualScore" id="playerScore">0</span></p>
+                    </div>
+
+                    <div class="scoreCard">
+                        <span id="cpuChoice">🐥</span>
+                        <p>Computer: <span class="actualScore" id="cpuScore">0</span></p>
+                    </div>
+                
+                </div>
+                <div class="reset"><button id="btnReset">Reset</button></div>
+            </section>
+        </main>
+        <footer>Copyright &copy or whatever.</footer>
+    </div>
 </body>
 </html>
