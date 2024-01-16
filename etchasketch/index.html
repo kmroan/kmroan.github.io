@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="etch.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>   
+            <h1>Etch-a-Sketch</h1>
+        </header>
+        <section class="nav">
+            <nav>
+                <label id="lblGridSlider">16</label>
+                <input type="range" name="gridSlider" id="gridSlider" min="16" max="100" value="16" step="1">
+                <button type="button" id="btnBlack">Black</button>
+                <button type="button" id="btnRed">Red</button>
+                <button type="button" id="btnRandom">Random</button>
+                <button type="button" id="btnReset">Reset</button>
+            </nav>
+        </section>
+        <section class="gridCtr">
+            <div class="grid" id="grid"></div>
+        </section>
+    </div>
+</body>
+</html>
