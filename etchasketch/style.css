@@ -30,22 +30,28 @@ header {
     display:flex;
     justify-content: center;
     color:#525ceb; 
-    width: 100%;
 }
 
 .grid {
     display:flex;
-    justify-content: center;
-    flex: 1 1 60%;
     flex-wrap: wrap;
-    max-width:60%
+    overflow:hidden;
+    width:500px;
+    height:500px;
 }
 
 .gridBox {
-    display:flex;
-    border: 1px solid #000;
-    width: 1rem;
-    height: 1rem;
+    border: none;
     background-color: #fff;
-    flex-wrap: wrap;
+    flex:1 0 calc(100% /16);
+    aspect-ratio: 1;
+    box-sizing:border-box;
+}
+
+footer {
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    padding: 1% 10% 1% 10%;
+    margin-top:auto;
 }
